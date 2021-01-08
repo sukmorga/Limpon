@@ -11,6 +11,7 @@ h1 {
     font-size: 80px;
     font-weight: 600;
     color: #192b59;
+    line-height: 90px;
 }
 .nav {
     font-size: 12px;
@@ -27,12 +28,14 @@ h1 {
     font-size: 40px;
     color: #192b59;
     font-weight: 700;
+    line-height: 50px;
 }
 .grid h2 span {
     font-size: 14px;
     color: #1085e4;
     font-weight: 800;
     display: block;
+    text-transform: uppercase;
 }
 .grid-item h3 {
     font-size: 20px;
@@ -43,4 +46,127 @@ h1 {
     color: #1085e4;
     font-size: 14px;
     font-weight: 600;
+}
+.grid-author {
+    font-size: 14px;
+    color: #1085e4;
+}
+.grid-author span {
+   font-size: 16px;
+   font-weight: 700;
+   color: #192b59;
+}   
+.subscribe h2 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+.subscribe h2 span {
+    font-size: 14px;
+    font-weight: 800;
+    color: #00bffe;
+    display: block;
+    text-transform: uppercase;
+}
+.subscribe input {
+    font-size: 14px;
+}
+.btn-subscribe {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #1085e4;
+    text-transform: uppercase;
+}
+.page-softwere h2 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    color: #192b59;
+}
+.page-softwere dl dt {
+    font-weight: 700;
+    color: #5a6789;
+}
+.page-softwere dl dd {
+    font-size: 14px;
+    line-height: 24px;
+}
+.page-stat h2 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    color: #192b59;
+}
+.page-stat h2 span {
+    font-size: 16px;
+    font-weight: 800;
+    color: #1085e4;
+    text-transform: uppercase;
+    display: block;
+}
+.stat li {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #1085e4;
+    text-transform: uppercase;
+}
+.stat li span {
+    font-size: 60px;
+    color: #bacbdc;
+    display: block;
+}
+.app h2 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    color: #192b59;
+}
+.app h3 {
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+.analytics-description h2 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    color: #192b59;
+}
+.analytics-description a {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 90px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #1085e4;
+}
+.analytics-description2 h2 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    color: #192b59;
+}
+.analytics-description2 a {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 90px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #1085e4;
+}
+.page-screen h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    color: #192b59;
+}
+.page-screen h2 span {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 90px;
+    text-transform: uppercase;
+    color: #1085e4;
+    display: block;
 }
