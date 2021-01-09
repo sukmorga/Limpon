@@ -28,18 +28,81 @@ h1 {
     font-size: 80px;
     font-weight: 600;
     color: #192b59;
-    line-height: 90px;
+    line-height: 1.1;
+    letter-spacing: -2.5px;
+    max-width: 600px;
+    margin-bottom: 65px;
+}
+.wrap {
+    max-width: 1110px;
+    margin: 0 auto;
 }
 .nav {
     font-size: 12px;
     font-weight: 700;
-    color: #6e7ea9;
     text-transform: uppercase;
+    list-style-type: none;
+    letter-spacing: 2.4px;
+    display: flex;
+}
+.nav>li {
+    padding: 0 15px;
+}
+.nav-item {
+    color: #6e7ea9;
+}
+.btn-primary {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #1085e4;
+    border: 1px solid #1085e4;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 30px;
+    letter-spacing: 2.5px;
+}
+.btn-primary:hover {
+    color:#1085e4;
+    background-color: #fff;
+}   
+.btn-secondary {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #cbdbe8;
+    border: 1px solid #cbdbe8;
+    color: #7e8bae;
+    padding: 20px 40px;
+    border-radius: 30px;
+    letter-spacing: 2.5px;
+}
+.btn-secondary:hover {
+    background-color: #fff;
 }
 .btn-free {
-    color: #fff;
     font-weight: 400;
+    padding: 21px 56px;
+    letter-spacing: 1.7px;
+}
+.btn-info {
+    color: #8085b1;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    background-color: transparent;
+    border: 1px solid #dce1e5;
+    padding: 20px 40px;
+    border-radius: 30px;
+}
+.btn-info:hover {
     background-color: #1085e4;
+    border: 1px solid #1085e4;
+    color: #fff;
+}
+.btn-group a + a  {
+    margin-left: 15px;
 }
 .grid h2 {
     font-size: 40px;
@@ -112,27 +175,42 @@ h1 {
 .page-stat h2 {
     font-size: 50px;
     font-weight: 600;
-    line-height: 60px;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
     color: #192b59;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;;
 }
 .page-stat h2 span {
     font-size: 16px;
     font-weight: 800;
+    letter-spacing: 3.0px;
     color: #1085e4;
     text-transform: uppercase;
     display: block;
+    margin-bottom: 14px;
 }
-.stat li {
+.stat {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-top: 76px;
+}
+.stat>li {
     font-size: 12px;
     font-weight: 700;
-    line-height: 30px;
     color: #1085e4;
     text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2.7px;
 }
-.stat li span {
+.stat>li>span {
     font-size: 60px;
     color: #bacbdc;
     display: block;
+    margin-bottom: 23px;
+    letter-spacing: 0;
 }
 .app h2 {
     font-size: 50px;
@@ -178,12 +256,60 @@ h1 {
     font-weight: 600;
     line-height: 50px;
     color: #192b59;
+    text-align: center;
+    letter-spacing: -1.1px;
 }
 .page-screen h2 span {
     font-size: 18px;
     font-weight: 800;
-    line-height: 90px;
     text-transform: uppercase;
     color: #1085e4;
     display: block;
+    letter-spacing: 3.6px;
+}
+.screen {
+    margin-top: 70px;
+}
+.plans-title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #192b59;
+    text-align: center;
+    letter-spacing: -1.3px;
+    margin-bottom: 93px;
+}
+.plans-title span {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    color: #1085e4;
+    display: block;
+    margin-bottom: 28px;
+}
+.box-price {
+    display: flex;
+    justify-content: space-between;
+}
+.box-price-item {
+    background-color: #f5faff;
+}
+.box-price-item.active {
+    background-color: #192b59;
+    color: #fff;
+}
+
+/* PAGE */
+
+.page-stat {
+    background-color: #edf6ff;
+    padding: 116px 0 96px 0;
+}
+.page-screen {
+    background-color: #edf6ff;
+    padding: 106px 0 0 0;
+    text-align: center;
+}
+.page-plans {
+    text-align: center;
 }
