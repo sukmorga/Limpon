@@ -292,12 +292,59 @@ h1 {
     justify-content: space-between;
 }
 .box-price-item {
-    background-color: #f5faff;
+    background-color: #edf4fb;
+    background-image: url(../img/bg-plan.png);
+    width: 350px;
+    height: 623px;
+    color: #000958;
+}
+.box-price-item ul {
+    font-size: 14px;
+    line-height: 40px;
+    color: #8085b1;
+}
+.box-price-item.active ul {
+    font-size: 14px;
+    line-height: 40px;
+    color:#fff;
 }
 .box-price-item.active {
     background-color: #192b59;
+    background-image: none;
     color: #fff;
 }
+.box-price-item h3 {
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: -2.5px;
+    line-height: 40px;
+    margin-bottom: 70px;
+    height: 40px;
+    padding-top: 82px;
+}
+.box-price-item h3 span {
+    font-size: 20px;
+}
+.box-price-item h3 span + span {
+    color: #7b8ab2;
+}
+.box-price-item p strong {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #0084ff;
+    letter-spacing: 2.5px;
+}
+.box-price-item p {
+    margin-bottom: 29px;
+}
+.box-price-item ul {
+    margin-bottom: 54px;
+}
+.box-price-item .btn-info, .btn-primary {
+    padding: 20px 62px;
+}
+
+
 
 /* PAGE */
 
@@ -312,4 +359,5 @@ h1 {
 }
 .page-plans {
     text-align: center;
+    padding-bottom: 122px;
 }
