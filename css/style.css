@@ -348,7 +348,16 @@ input::placeholder {
     right: 0;
     top: 53px;
 }
-
+.softwere-screen{
+    display: block;
+    background-image: url(../img/softwere-screen.png);
+    background-repeat: no-repeat;
+    width: 1465px;
+    height: 1440px;
+    position: absolute;
+    left: -541px;
+    top: 66px;
+}
 .page-softwere-flex {
     display: flex;
     justify-content: flex-end;
@@ -362,18 +371,18 @@ input::placeholder {
     display: block;
     background-image: url(../img/softwere-icon.png);
     background-repeat: no-repeat;
-    width: 147px;
-    height: 116px;
-    margin-left: -55px;
+    width: 115px;
+    height: 97px;
+    margin-left: -25px;
 }
 .page-softwere h2 {
-    max-width: 765px;
-    margin-top: 12px;
+    max-width: 564px;
+    margin-top: 10px;
     margin-bottom: 26px;
     font-size: 50px;
     font-weight: 600;
     line-height: 60px;
-    letter-spacing: 0.5px;
+    letter-spacing: -1.5px;
     color: #192b59;
 }
 .page-softwere-list {
@@ -383,14 +392,15 @@ input::placeholder {
 }
 .page-softwere-list::-webkit-scrollbar {
     width: 4px;
-    height: 314px;
+    height: 4px;
+}
+.page-softwere-list::-webkit-scrollbar-track-piece{
     background-color: #f3f6ff;
-    border-radius: 2px;
 }
 .page-softwere-list::-webkit-scrollbar-thumb {
     height: 20px;
     background-color: #1085e4;
-    border-radius: 2px;
+    border-radius: 10px;
 }
 .page-softwere dl dt {
     font-weight: 700;
@@ -442,22 +452,71 @@ input::placeholder {
     margin-bottom: 23px;
     letter-spacing: 0;
 }
+.app {
+    max-width: 55%;
+}
 .app h2 {
     font-size: 50px;
     font-weight: 600;
     line-height: 60px;
     color: #192b59;
+    margin-bottom: 36px;
 }
 .app h3 {
+    font-size: 16px;
     font-weight: 700;
     line-height: 60px;
+    letter-spacing: 3.2px;
+    color: #c4d2dd;
     text-transform: uppercase;
+    margin-top: 10px;
+}
+.page-app-list {
+    margin-left: -15px;
+}
+.page-app-list>li {
+    display: inline-block;
+
+}
+.page-app-list>li>a {
+    background-image: url(../img/app.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 185px;
+    height: 77px;
+}
+.page-app-list>li>a.page-app-android {
+    background-position: 0 0;
+}
+.page-app-list>li>a.page-app-ios {
+    background-position: -191px 0;
+}
+.video-app {
+    position: absolute;
+    top: -61px;
+    right: -172px;
+}
+.flex-analytics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-analytics>div {
+    flex-basis: 53%;
 }
 .analytics-description h2 {
     font-size: 50px;
     font-weight: 600;
     line-height: 60px;
     color: #192b59;
+    letter-spacing: -1.5px;
+    margin-bottom: 26px;;
+}
+.analytics-description p {
+    margin-bottom: 20px;
+}
+.analytics-description .btn-primary {
+    padding: 20px 40px;
 }
 .analytics-description a {
     font-size: 12px;
@@ -612,6 +671,22 @@ input::placeholder {
     background: -ms-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
     background: linear-gradient(135deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2378cd', GradientType=1 );
+}
+.page-softwere {
+    position: relative;
+    overflow: hidden;
+}
+.page-app {
+    padding: 110px 0 82px;
+}
+.page-app .wrap {
+    position: relative;
+}
+.page-analytics {
+    background-image: url(../img/page-analytics-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 124px 0 108px;
 }
 .page-plans {
     text-align: center;
