@@ -702,8 +702,64 @@ input::placeholder {
 .box-price-item .btn-info, .btn-primary {
     padding: 20px 62px;
 }
-
-
+.page-team h2 {
+    font-size: 40px;
+    letter-spacing: -1.2px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 148px;
+}
+.page-team h2 span {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #85c8ff;
+    letter-spacing: 3.6px;
+    display: block;
+    margin-bottom: 28px;
+}
+.box-team {
+    display: flex;
+    justify-content: space-between;
+}
+.box-team-item {
+    background-color: #fff;
+    flex-basis: 31.5%;
+    box-shadow: 0 8px 30px rgba(156, 156, 156, 0.1);
+    position: relative;
+    padding: 207px 0 38px 0;
+}
+.box-team-item .avatar {
+    position: absolute;
+    top: -86px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+.box-team-item .position {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2.8px;
+    color: #1a88e1;
+    margin-bottom: 7px;
+}
+.box-team-item .name {
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: -0.78px;
+    color: #192b59;
+    margin-bottom: 28px;
+}
+.box-team-item .btn-more {
+    display: block;
+    background-image: url(../img/btn-more.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
 
 /* PAGE */
 
@@ -785,4 +841,12 @@ input::placeholder {
     text-align: center;
     padding-bottom: 122px;
     padding-top: 112px;
+}
+.page-team {
+    text-align: center;
+    background-image: url(../img/team-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 113px 0;
 }
