@@ -727,7 +727,7 @@ input::placeholder {
     flex-basis: 31.5%;
     box-shadow: 0 8px 30px rgba(156, 156, 156, 0.1);
     position: relative;
-    padding: 207px 0 38px 0;
+    padding: 207px 55px 38px;
 }
 .box-team-item .avatar {
     position: absolute;
@@ -751,15 +751,93 @@ input::placeholder {
     color: #192b59;
     margin-bottom: 28px;
 }
-.box-team-item .btn-more {
-    display: block;
-    background-image: url(../img/btn-more.png);
-    background-repeat: no-repeat;
+.box-team-item .btn-team {
+    background-color: #f3f3f3;
+    border-radius: 100%;
     width: 50px;
     height: 50px;
     margin: 0 auto;
-    border-radius: 50%;
+    display: flex;
 }
+.box-team-item .btn-team:hover {
+    background-color: #1a88e1;
+}
+.box-team-item .btn-team span {
+    display: block;
+    background-image: url(../img/btn-team.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    align-self: center;
+}
+.box-team-item .btn-more span {
+    background-position: -8px -8px;
+    width: 20px;
+    height: 20px;
+}
+.box-team-item .btn-more:hover span {
+    background-position: -8px -39px;
+}
+.social-team {
+    display: flex;
+    justify-content: space-between;
+}
+.box-team-item .btn-fb span {
+    background-position: -47px -9px;
+    width: 8px;
+    height: 15px;
+}
+.box-team-item .btn-fb:hover span {
+    background-position: -47px -40px;
+}
+.box-team-item .btn-tw span {
+    background-position: -76px -12px;
+    width: 15px;
+    height: 12px;
+}
+.box-team-item .btn-tw:hover span {
+    background-position: -76px -43px;
+}
+.box-team-item .btn-be span {
+    background-position: -111px -12px;
+    width: 17px;
+    height: 11px;
+}
+.box-team-item .btn-be:hover span {
+    background-position: -111px -43px;
+}
+.box-team-item .btn-web span {
+    background-position: -144px -10px;
+    width: 15px;
+    height: 14px;
+}
+.box-team-item .btn-web:hover span {
+    background-position: -144px -41px;
+}
+.object-circle {
+    display: block;
+    width: 663px;
+    height: 663px;
+    position: absolute;
+    left: 0;
+    bottom: -363px;
+    background-image: url(../img/circle-gray.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.objeck-rhombus {
+    background-image: url(../img/rhombus-gray.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    width: 673px;
+    height: 673px;
+    position: absolute;
+    right: -111px;
+    top: -198px;
+}
+
+
+
 
 /* PAGE */
 
@@ -781,6 +859,7 @@ input::placeholder {
 .page-stat {
     background-color: #edf6ff;
     padding: 116px 0 96px;
+    position: relative;
 }
 .page-screen {
     background-color: #edf6ff;
