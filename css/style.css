@@ -322,9 +322,11 @@ h1 {
     color: #90a6dd;
     background-color: transparent;
 }
-input::placeholder {
-    color: #90a6dd;
-}
+.subscribe-box input::-webkit-placeholder {color: #90a6dd;}
+.subscribe-box input::-moz-placeholder {color: #90a6dd;}
+.subscribe-box input:-moz-placeholder {color: #90a6dd;}
+.subscribe-box input:-ms-placeholder {color: #90a6dd;}
+
 .btn-subscribe {
     font-size: 14px;
     font-weight: 700;
@@ -452,6 +454,19 @@ input::placeholder {
     display: block;
     margin-bottom: 23px;
     letter-spacing: 0;
+}
+.intro {
+    opacity: 0.04;
+    font-size: 300px;
+    font-weight: 800;
+    letter-spacing: -9px;
+    line-height: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40px;
+    text-align: center;
+    margin: 0 auto;
 }
 .app {
     max-width: 55%;
@@ -835,8 +850,67 @@ input::placeholder {
     right: -111px;
     top: -198px;
 }
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input, .contact-form textarea {
+    font-size: 14px;
+    border: 2px solid rgba(72, 72, 72, 0.1);
+    border-radius: 35px;
+    padding: 26px 80px 26px 37px ;
+    width: 100%;
+}
+.contact-form textarea {
+    min-height: 161px;
+    resize: none;
+}
 
+.contact-form input::-webkit-placeholder, .contact-form textarea::-webkit-placeholder  {color: #8995b3;}
+.contact-form input::-moz-placeholder, .contact-form textarea::-moz-placeholder {color: #8995b3;}
+.contact-form input:-moz-placeholder, .contact-form textarea:-moz-placeholder {color: #8995b3;}
+.contact-form input:-ms-placeholder, .contact-form textarea:-ms-placeholder {color: #8995b3;}
 
+.contact-form-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+.contact-form-item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 42px;
+}
+.contact-form-name::after {
+    background-image: url(../img/icon-name.png);
+    width: 13px;
+    height: 15px;
+    top: calc(50% - 7px);
+}
+.contact-form-mail::after {
+    background-image: url(../img/icon-mail.png);
+    width: 14px;
+    height: 11px;
+    top: calc(50% - 5px);
+}
+.contact-form-text::after {
+    background-image: url(../img/icon-text.png);
+    width: 14px;
+    height: 15px;
+    top: 29px;
+}
+.flex-form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+}
+.flex-form img {
+    margin-right: 60px;
+}
+.flex-form>div {
+    flex-basis: 46%;
+}
 
 
 /* PAGE */
@@ -865,6 +939,7 @@ input::placeholder {
     background-color: #edf6ff;
     padding: 106px 0 0 0;
     text-align: center;
+    margin-bottom: 120px;
 }
 .page-subscribe {
     background: rgba(10,32,144,1);
@@ -902,7 +977,7 @@ input::placeholder {
 }
 .page-clients {
     position: relative;
-    padding: 40px 0 0 0;
+    padding: 73px 0 0;
 }
 .page-clients::before {
     content: "";
@@ -928,4 +1003,10 @@ input::placeholder {
     background-size: cover;
     background-position: center;
     padding: 113px 0;
+}
+.page-form {
+    background-image: url(../img/bg-form.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
