@@ -840,15 +840,23 @@ h1 {
     background-size: contain;
 }
 .objeck-rhombus {
-    background-image: url(../img/rhombus-gray.svg);
+    background-image: url(../img/rhombus-gray.png);
     background-repeat: no-repeat;
     background-size: contain;
     display: block;
-    width: 673px;
-    height: 673px;
+    width: 601px;
+    height: 672px;
     position: absolute;
-    right: -111px;
+    right: 0;
     top: -198px;
+}
+.page-form h2 {
+    color: #192b59;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: -1.5px;
+    margin-bottom: 45px;
 }
 .contact-form {
     display: flex;
@@ -871,9 +879,36 @@ h1 {
 .contact-form input:-moz-placeholder, .contact-form textarea:-moz-placeholder {color: #8995b3;}
 .contact-form input:-ms-placeholder, .contact-form textarea:-ms-placeholder {color: #8995b3;}
 
+
+
+.contact-form .btn-primary {
+    position: relative;
+    padding: 22px 40px 22px 65px;
+    max-width: 230px ;
+    letter-spacing: 2px;
+}
+.contact-form .btn-primary::after {
+    content: "";
+    background-image: url(../img/btn-plane.png);
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    left: 54px;
+    top: calc(50% - 6px);
+    width: 13px;
+    height: 13px;
+}
+.contact-form .btn-primary:hover {
+    color: #fff;
+    background-color: #192b59;
+}
+
 .contact-form-item {
     margin-bottom: 20px;
     position: relative;
+}
+.contact-form-text {
+    margin-bottom: 32px;
 }
 .contact-form-item::after {
     content: "";
@@ -911,7 +946,42 @@ h1 {
 .flex-form>div {
     flex-basis: 46%;
 }
-
+.footer p a {
+    color: #1085e4;
+    text-transform: uppercase;
+}
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.social {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 16%;
+    align-items: center;
+}
+.social-link {
+    display: block;
+    background-image: url(../img/footer-icons.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+.fb-link {
+    background-position: 0 0;
+}
+.tw-link {
+    background-position: -31px 0;
+}
+.be-link {
+    background-position: -74px 0;
+}
+.pi-link {
+    background-position: -115px 0;
+}
+.f-link {
+    background-position: -152px 0;
+}
 
 /* PAGE */
 
@@ -1009,4 +1079,10 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-top: 110px;
+    padding-bottom: 113px;
+}
+.footer {
+    background-color: #192b59;
+    padding: 22px 0 22px;
 }
