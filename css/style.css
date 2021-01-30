@@ -24,6 +24,8 @@ body {
 .wrap {
     max-width: 1110px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 a {
     text-decoration: none;
@@ -132,35 +134,48 @@ h1 {
     margin-left: 15px;
 }
 .list-company {
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     max-width: 1110px;
     margin: 0 auto;
-}
-.list-company-item {
-    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .company-one {
-    background-image: url(../img/company-1.png);
-    flex-basis: 198px;
-    height: 58px;
+    flex-basis: 25%;
 }
 .company-two {
-    background-image: url(../img/company-2.png);
-    flex-basis: 200px;
-    height: 69px;
+    flex-basis: 25%;
 }
 .company-three {
-    background-image: url(../img/company-3.png);
-    flex-basis: 201px;
-    height: 47px;
+    flex-basis: 25%;
 }
 .company-four {
+    flex-basis: 25%;
+}
+.list-company-item  span {
+    display: block;
+}
+.company-one span {
+    background-image: url(../img/company-1.png);
+    width: 198px;
+    height: 58px;
+}
+.company-two span {
+    background-image: url(../img/company-2.png);
+    width: 200px;
+    height: 69px;
+}
+.company-three span {
+    background-image: url(../img/company-3.png);
+    width: 201px;
+    height: 47px;
+}
+.company-four span {
     background-image: url(../img/company-4.png);
-    flex-basis: 200px;
+    width: 200px;
     height: 69px;
 }
 .grid-item {
@@ -180,7 +195,7 @@ h1 {
     grid-gap: 35px;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
-    padding: 103px 0 117px;                 
+    padding: 103px 15px 117px;
 }
 .grid-title {
     grid-area: a;
@@ -212,7 +227,6 @@ h1 {
     font-weight: 700;
     line-height: 50px;
     letter-spacing: -1.2px;
-    max-width: 260px;
 }
 .grid h2 span {
     font-size: 14px;
@@ -280,19 +294,20 @@ h1 {
    font-weight: 700;
    color: #192b59;
 }
-.subscribe{
-    padding: 114px 0 121px;
-    position: relative;
-
+.box-subscribe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.subscribe h2 {
+.box-subscribe h2 {
     font-size: 50px;
     font-weight: 600;
     color: #fff;
     margin-bottom: 44px;
     letter-spacing: -1.5px;
 }
-.subscribe h2 span {
+.box-subscribe h2 span {
     font-size: 14px;
     font-weight: 800;
     color: #00bffe;
@@ -301,7 +316,7 @@ h1 {
     margin-bottom: 30px;
     letter-spacing: 2.7px;
 }
-.subscribe p {
+.box-subscribe p {
     font-size: 18px;
     line-height: 28px;
     color: #a7b6e4;
@@ -314,6 +329,7 @@ h1 {
     border: 2px solid #4673c1;
     border-radius: 35px;
     padding-left: 37px;
+    padding-right: 6px;
 }
 .subscribe-box input {
     font-size: 14px;
@@ -347,7 +363,6 @@ h1 {
     display: block;
     width: 354px;
     height: 417px;
-    position: absolute;
     right: 0;
     top: 53px;
 }
@@ -587,6 +602,8 @@ h1 {
 }
 .screen {
     margin-top: 70px;
+    max-width: 1288px;
+    width: 100%;
 }
 .page-clients h2 {
     color: #ffffff;
@@ -1012,6 +1029,8 @@ h1 {
     margin-bottom: 120px;
 }
 .page-subscribe {
+    padding-top: 48px;
+    padding-bottom: 56px;
     background: rgba(10,32,144,1);
     background: -moz-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
     background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(10,32,144,1)), color-stop(100%, rgba(35,120,205,1)));
@@ -1085,4 +1104,46 @@ h1 {
 .footer {
     background-color: #192b59;
     padding: 22px 0 22px;
+}
+
+/* MEDIA */
+
+@media (max-width: 1050px) {
+    .page-company {
+        padding: 50px 0 20px;
+    }
+    .list-company-item {
+        flex-basis: 50%;
+        margin-bottom: 50px;
+    }
+    .list-company-item span {
+        margin: 0 auto;
+    }
+    .grid {
+        grid-template-areas: "a a"
+                             "b c" 
+                             "d e"
+                             "f g"
+                             "h h";
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid h2 {
+        text-align: center;
+    }
+    .box-subscribe {
+        flex-direction: column-reverse;
+    }
+    .box-subscribe div {
+        flex-basis: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .box-subscribe div p {
+        margin: 0 auto 30px;
+    }
+    .box-subscribe img {
+        margin: 0 auto 25px;
+        max-width: 170px;
+    }
+
 }
