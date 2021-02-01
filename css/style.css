@@ -377,7 +377,7 @@ ul.nav-modal>li:last-child {
     max-width: 405px;
 }
 .subscribe-box {
-    width: 540px;
+    max-width: 540px;
     height: 70px;
     border: 2px solid #4673c1;
     border-radius: 35px;
@@ -737,6 +737,7 @@ ul.nav-modal>li:last-child {
 .box-price {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .box-price-item {
     background-color: #edf4fb;
@@ -813,6 +814,7 @@ ul.nav-modal>li:last-child {
 .box-team {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .box-team-item {
     background-color: #fff;
@@ -963,6 +965,7 @@ ul.nav-modal>li:last-child {
     padding: 22px 40px 22px 65px;
     max-width: 230px ;
     letter-spacing: 2px;
+    border: 1px solid #192b59;
 }
 .contact-form .btn-primary::after {
     content: "";
@@ -1015,6 +1018,7 @@ ul.nav-modal>li:last-child {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     margin: 0 auto;
 }
 .flex-form img {
@@ -1030,6 +1034,7 @@ ul.nav-modal>li:last-child {
 .footer-flex {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .social {
     display: flex;
@@ -1319,6 +1324,47 @@ ul.nav-modal>li:last-child {
         max-width: 600px;
         margin: 0 auto 30px;
     }
+    .page-plans {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .box-price-item {
+        flex-basis: 100%;
+        max-width: 600px;
+        margin: 0 auto 20px;
+    }
+    .page-team {
+        padding: 50px 0;
+    }
+    .box-team-item {
+        flex-basis: 100%;
+        max-width: 400px;
+        margin: 0 auto 100px;
+    }
+    .box-team-item:last-child{
+        margin-bottom: 0;
+    }
+    .flex-form img {
+        flex-basis: 100%;
+        max-width: 456px;
+        margin: 0 auto;
+    }
+    .flex-form>div {
+        flex-basis: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .page-form {
+        padding: 50px 0;
+    }
+    .footer-flex p {
+        flex-basis: 100%;
+        margin: 0 auto 10px;
+        text-align: center;
+    }
+    .footer-flex ul {
+        margin: 0 auto;
+    }
 }
 @media (max-width: 930px) {
     .intro {
@@ -1329,6 +1375,9 @@ ul.nav-modal>li:last-child {
     .stat>li {
         flex-basis: 34%;
         margin-bottom: 30px;
+    }
+    .object-circle, .objeck-rhombus {
+        display: none;
     }
 }
 @media (max-width: 600px) {
@@ -1354,12 +1403,15 @@ ul.nav-modal>li:last-child {
     .btn-group a+a {
         margin-left: 0;
     }
-    .page-app h2, .page-analytics h2, .page-analytics2 h2, .page-clients h2 {
+    .page-app h2, .page-analytics h2, .page-analytics2 h2, .page-clients h2, .page-form h2, .page-stat h2, .page-screen h2, .page-softwere h2, .page-subscribe h2 {
         font-size: 30px;
         line-height: 40px;
         margin: 0 auto 20px;
     }
     .page-clients h2 span {
         margin-bottom: 0;
+    }
+    .subscribe-box input {
+        margin-right: 20px;
     }
 }
