@@ -428,8 +428,8 @@ ul.nav-modal>li:last-child {
     width: 48%;
     height: 986px;
     position: absolute;
-    left: -84px;;
-    bottom: -304px;
+    left: 0;
+    bottom: 0;
     z-index: -1;
 }
 .page-softwere-flex {
